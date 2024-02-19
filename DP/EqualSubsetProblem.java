@@ -3,7 +3,7 @@ package DP;
  * Problem statement : Given an array , you need to divide the array in two subset such that the elements sum is equal
  * Observation : if the sum is odd then you cannot divide the sum in integer it will always  float .
  *               using this observation we will check if the sum is odd and even if odd return false and if even 
- *               the problem reduces to equal subset problem. 
+ *               the problem reduces to equal subset problem.  
  */
 public class EqualSubsetProblem {
     public static void main(String[] args) {
