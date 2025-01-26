@@ -1,14 +1,22 @@
 package Trees;
+
 import java.util.*;
+
 public class Tree {
+
     int data;
+    
     Tree left,right;
-    void inorder(Tree root)
+
+    Tree()
     {
-        if(root==null)
-        return ;
-        inorder(root.left);
-        System.out.println(root.data);
-        inorder(root.right);
+        left = right = null;
     }
+
+    Tree(int data)
+    {
+        this.data = data;
+        left = right = null;
+    }
+    
 }

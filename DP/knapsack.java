@@ -21,6 +21,7 @@ public class knapsack {
         ans=top_down(weight,value,bag_weight,index);
         System.out.println("max profit is recursive "+ans_recursive+" bottom up or memoization "+ans_bottom_up + " top down "+ans  );
     }
+
     static int recursive(int weight[],int value[],int bag_weight , int index)
     {
         if(index == 0 || bag_weight == 0)
@@ -34,6 +35,8 @@ public class knapsack {
         else
         return recursive(weight, value, bag_weight, index-1);
     }
+    
+    // Used for recursive approach
     static int bottom_up (int weight[],int value[],int bag_weight,int index)
     {
         if(index == 0 || bag_weight == 0)
@@ -50,6 +53,8 @@ public class knapsack {
         dp[index][bag_weight] = recursive(weight, value, bag_weight, index-1);
         return dp[index][bag_weight];
     }
+
+    // Used for Iterative  approach
     static int top_down(int weight[],int value[],int bag_weight,int index)
     {
         
