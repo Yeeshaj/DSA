@@ -42,7 +42,7 @@ public class TopologicalSort {
             }
         }
 
-        if(ans.size() > vertices )
+        if(ans.size() != vertices )
             return null; // cycle exits
 
         return ans;
