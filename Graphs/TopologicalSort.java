@@ -59,16 +59,24 @@ public class TopologicalSort {
         }
 
         // Add edges
-        adjList.get(5).add(2);
-        adjList.get(5).add(0);
-        adjList.get(4).add(0);
-        adjList.get(4).add(1);
+        // adjList.get(5).add(2);
+        // adjList.get(5).add(0);
+        // adjList.get(4).add(0);
+        // adjList.get(4).add(1);
+        // adjList.get(2).add(3);
+        // adjList.get(3).add(1);
+
+        adjList.get(0).add(1);
+        adjList.get(1).add(2);
         adjList.get(2).add(3);
-        adjList.get(3).add(1);
+        adjList.get(3).add(0);
 
        
             List<Integer> topoOrder = khansAlgo(adjList,n);
-            System.out.println("Topological Order: " + topoOrder);
+            if(topoOrder == null)
+                System.out.println("Cycle Exists!");
+            else
+                System.out.println("Topological Order: " + topoOrder);
        
     }
 }
