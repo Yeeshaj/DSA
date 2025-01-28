@@ -68,7 +68,7 @@ public class dijikstra {
     }
 }
 
-class Edge
+class Edge 
 {
     int target,weight;
     Edge(int target, int weight)
@@ -76,4 +76,6 @@ class Edge
         this.target = target;
         this.weight = weight;
     }
+
+    
 }
